@@ -34,3 +34,7 @@ if [ -f '/home/vkk/.config/plasmarc' ]; then
 else
     echo "Plasma was not found"
 fi
+
+if [ -f '/home/vkk/.config/konsolerc' ]; then
+    konsoleprofile colors="Solarized"
+fi
