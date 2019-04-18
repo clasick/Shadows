@@ -16,6 +16,7 @@ echo "Shadows v001"
 echo "------------"
 desiredCodeTheme="Solarized Dark"
 desiredPlasmaTheme="breeze-dark"
+desiredPlasmaLookAndFeelTheme="breezedark"
 
 if [ -d "/home/vkk/.config/Code - OSS/User" ]; then
     codeTheme=$(perl -n -e  '/workbench.colorTheme": "(.*)"/ && print $1' '/home/vkk/.config/Code - OSS/User/settings.json')
@@ -30,6 +31,7 @@ fi
 
 if [ -f '/home/vkk/.config/plasmarc' ]; then
     kwriteconfig5 --file ~/.config/plasmarc --group Theme --key name $desiredPlasmaTheme
+    lookandfeeltool --apply org.kde.$desiredPlasmaLookAndFeelTheme.desktop
     echo "Plasma theme changed to $desiredPlasmaTheme"
 else
     echo "Plasma was not found"
