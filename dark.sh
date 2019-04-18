@@ -14,7 +14,7 @@
 
 echo "Shadows v001"
 echo "------------"
-desiredCodeTheme="Abyss"
+desiredCodeTheme="Solarized Dark"
 desiredPlasmaTheme="breeze-dark"
 
 if [ -d "/home/vkk/.config/Code - OSS/User" ]; then
