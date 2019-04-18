@@ -14,8 +14,8 @@
 
 echo "Shadows v001"
 echo "------------"
-desiredCodeTheme="Visual Studio Light"
-desiredPlasmaTheme="breeze-light"
+desiredCodeTheme="Solarized Light"
+desiredPlasmaTheme="breeze"
 
 if [ -d "/home/vkk/.config/Code - OSS/User" ]; then
     codeTheme=$(perl -n -e  '/workbench.colorTheme": "(.*)"/ && print $1' '/home/vkk/.config/Code - OSS/User/settings.json')
