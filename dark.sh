@@ -9,12 +9,12 @@
 # ░ ░▒  ░ ░ ▒ ░▒░ ░  ▒   ▒▒ ░ ░ ▒  ▒   ░ ▒ ▒░   ▒ ░ ░  ░ ░▒  ░ ░
 # ░  ░  ░   ░  ░░ ░  ░   ▒    ░ ░  ░ ░ ░ ░ ▒    ░   ░  ░  ░  ░  
 #       ░   ░  ░  ░      ░  ░   ░        ░ ░      ░          ░  
-#                             ░                                 
+#                             ░
 # echo "The time is $(date +"%T")"
 
 echo "Shadows v001"
 echo "------------"
-desiredCodeTheme="Monokai"
+desiredCodeTheme="Abyss"
 desiredPlasmaTheme="breeze-dark"
 
 if [ -d "/home/vkk/.config/Code - OSS/User" ]; then
@@ -28,7 +28,7 @@ if [ -d "/home/vkk/.config/Code - OSS/User" ]; then
     fi
 fi
 
-if [ -f '/home/vkk/.config/plasmarc' ]; then 
+if [ -f '/home/vkk/.config/plasmarc' ]; then
     kwriteconfig5 --file ~/.config/plasmarc --group Theme --key name $desiredPlasmaTheme
     echo "Plasma theme changed to $desiredPlasmaTheme"
 else
